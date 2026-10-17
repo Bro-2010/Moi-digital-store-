@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moi Madi's Thrift | Pre-loved Clothes in Gumani, Tamale</title>
+  <meta name="description" content="Moi Madi's Thrift in Gumani, Tamale. Pre-loved tees and polos with real character. Order on WhatsApp.">
+  <meta name="theme-color" content="#0f0f10">
+  <meta property="og:title" content="Moi Madi's Thrift">
+  <meta property="og:description" content="Pre-loved clothes with real character. Browse and order on WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#top" class="brand" aria-label="Moi Madi's Thrift home">
+        <span class="brand-mark">M</span>
+        <span class="brand-text">Moi Madi's <em>Thrift</em></span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#shop">Shop</a>
+        <a href="#how">How to order</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <button class="cart-button" id="cartOpen" aria-label="Open your order">
+        Order <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <p class="eyebrow">Gumani, Tamale</p>
+        <h1>Pre-loved clothes with <em>real character</em>.</h1>
+        <p class="hero-lead">Hand-picked tees, graphics and polos at fair prices. Browse below, add what you like, and send your order to us on WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#shop">Browse the collection</a>
+          <a class="btn btn-ghost" id="heroWhatsapp" href="#" target="_blank" rel="noopener">Chat with us</a>
+        </div>
+        <ul class="hero-points" aria-label="Why shop with us">
+          <li>Hand-picked, one of a kind</li>
+          <li>Order by WhatsApp</li>
+          <li>Open Monday to Saturday</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The collection</p>
+          <h2>Find your next favourite</h2>
+          <p class="muted">Each piece is one of a kind. Once it is gone, it is gone.</p>
+        </div>
+
+        <div class="toolbar">
+          <div class="search-wrap">
+            <input type="search" id="search" placeholder="Search tees, bands, events..." aria-label="Search products">
+          </div>
+          <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+        </div>
+
+        <p class="result-count" id="resultCount" aria-live="polite"></p>
+        <div class="grid" id="productGrid"></div>
+        <p class="empty" id="emptyState" hidden>No pieces match that search. Try another word or tap All.</p>
+      </div>
+    </section>
+
+    <section class="how" id="how">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Ordering</p>
+          <h2>Three steps to your order</h2>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">1</span>
+            <h3>Pick your pieces</h3>
+            <p>Tap <strong>Add to order</strong> on anything you like. Your list stays saved on this phone.</p>
+          </li>
+          <li>
+            <span class="step-num">2</span>
+            <h3>Send it on WhatsApp</h3>
+            <p>Open your order and tap <strong>Send order on WhatsApp</strong>. Your list goes straight to us.</p>
+          </li>
+          <li>
+            <span class="step-num">3</span>
+            <h3>Pay and collect</h3>
+            <p>We confirm the total and availability, then arrange payment and pick-up or delivery in Tamale.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="visit" id="visit">
+      <div class="container visit-inner">
+        <div>
+          <p class="eyebrow">Visit or message us</p>
+          <h2>We are in Gumani, Tamale</h2>
+          <p class="muted">Come see the pieces in person, or message us any time during opening hours.</p>
+          <ul class="contact-list">
+            <li><span>Location</span><a id="locationLink" href="#" target="_blank" rel="noopener">Gumani, Tamale, Ghana</a></li>
+            <li><span>Hours</span><strong id="hoursText"></strong></li>
+            <li><span>WhatsApp</span><a id="whatsappLink" href="#" target="_blank" rel="noopener"></a></li>
+          </ul>
+          <a class="btn btn-gold" id="visitWhatsapp" href="#" target="_blank" rel="noopener">Message us on WhatsApp</a>
+        </div>
+        <div class="visit-card" aria-hidden="true">
+          <span class="visit-badge">Moi Madi's</span>
+          <p>Pre-loved style,<br>picked with care.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-brand">Moi Madi's Thrift</p>
+        <p class="muted">Gumani, Tamale, Ghana</p>
+      </div>
+      <div class="footer-credit">
+        <p class="muted">Website designed and built by</p>
+        <p><strong>Bright Vission Digital Design</strong></p>
+        <p><a href="tel:+233599035746">0599 035 746</a></p>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> Moi Madi's Thrift. All rights reserved.</p>
+  </footer>
+
+  <!-- Order drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="drawer" id="drawer" aria-label="Your order" aria-hidden="true">
+    <div class="drawer-head">
+      <h2>Your order</h2>
+      <button class="icon-btn" id="cartClose" aria-label="Close">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <ul class="cart-list" id="cartList"></ul>
+      <p class="cart-empty" id="cartEmpty">Your order is empty. Add a piece to get started.</p>
+    </div>
+    <div class="drawer-foot">
+      <div class="cart-total"><span>Estimated total</span><strong id="cartTotal"></strong></div>
+      <p class="fineprint">Totals are confirmed by us on WhatsApp, including availability and delivery.</p>
+      <a class="btn btn-gold btn-block" id="checkoutBtn" href="#" target="_blank" rel="noopener">Send order on WhatsApp</a>
+      <button class="btn btn-ghost btn-block" id="clearCart">Clear order</button>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
